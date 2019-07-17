@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ALC4Phase1Challenge1</string>
+    <string name="title_welcome">Welcome to ALC 4.0</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_about_alc">About ALC</string>
+    <string name="button_my_profile">My Profile</string>
+    <string name="title_activity_main">ALC 4 Phase 1</string>
+    <string name="title_activity_about_alc">About ALC</string>
+    <string name="title_activity_my_profile">My Profile</string>
+    <string name="text_profile_text_name">Kidus Worku</string>
+    <string name="text_profile_text_track">Track:\t\tAndroid</string>
+    <string name="text_profile_text_country">Country:\t\tEthiopia</string>
+    <string name="text_profile_text_email">Email:\t\tkidusmik@gmail.com</string>
+    <string name="text_profile_text_phone">Phone:\t\t+251 91 336 3031</string>
+    <string name="text_profile_text_slack">Slack Username:\t\t@Kidus</string>
+    <string name="text_image_description_kidus">Image of Kidus Worku</string>
+    <string name="text_image_description_divider">Image of Divider</string>
+    <string name="text_image_description_logo">Image of ALC Logo</string>
+</resources>

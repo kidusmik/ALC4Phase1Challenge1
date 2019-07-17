@@ -1,0 +1,4 @@
+#Tue Jul 16 23:09:41 EAT 2019
+base.0=F\:\\Kidus\\Documents\\AndroidStudioProjects\\ALC4Phase1Challenge1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView_profile"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraint_profile_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".MyProfileActivity"
+        tools:showIn="@layout/activity_my_profile">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraint_profile_child1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0F3ECC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/image_profile_kidus"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="@string/text_image_description_kidus"
+                android:scaleType="centerCrop"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/image_kidus_worku"
+                tools:srcCompat="@drawable/image_kidus_worku"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/text_profile_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/text_profile_text_name"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_profile_kidus" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraint_profile_child2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/image_triangle"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/constraint_profile_child1"
+            app:layout_constraintVertical_bias="0.0"
+            tools:visibility="visible">
+
+        </android.support.constraint.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/image_profile_divider"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="16dp"
+            android:background="#070707"
+            android:contentDescription="@string/text_image_description_divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraint_profile_child2"
+            app:srcCompat="@android:drawable/divider_horizontal_dark"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/text_profile_track"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/rectangular_card_style"
+            android:drawableStart="@drawable/image_icon_track"
+            android:drawablePadding="10dp"
+            android:elevation="10dp"
+            android:selectAllOnFocus="true"
+            android:text="@string/text_profile_text_track"
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/image_profile_divider"
+            app:layout_constraintTop_toBottomOf="@+id/image_profile_divider" />
+
+        <TextView
+            android:id="@+id/text_profile_country"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/rectangular_card_style"
+            android:drawableStart="@drawable/image_icon_location"
+            android:drawablePadding="10dp"
+            android:elevation="10dp"
+            android:text="@string/text_profile_text_country"
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/text_profile_track"
+            app:layout_constraintStart_toStartOf="@+id/text_profile_track"
+            app:layout_constraintTop_toBottomOf="@+id/text_profile_track" />
+
+        <TextView
+            android:id="@+id/text_profile_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/rectangular_card_style"
+            android:drawableStart="@drawable/image_icon_email"
+            android:drawablePadding="10dp"
+            android:elevation="10dp"
+            android:text="@string/text_profile_text_email"
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/text_profile_track"
+            app:layout_constraintStart_toStartOf="@+id/text_profile_track"
+            app:layout_constraintTop_toBottomOf="@+id/text_profile_country" />
+
+        <TextView
+            android:id="@+id/text_profile_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/rectangular_card_style"
+            android:drawableStart="@drawable/image_icon_phone"
+            android:drawablePadding="10dp"
+            android:elevation="10dp"
+            android:text="@string/text_profile_text_phone"
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/text_profile_track"
+            app:layout_constraintStart_toStartOf="@+id/text_profile_track"
+            app:layout_constraintTop_toBottomOf="@+id/text_profile_email" />
+
+        <TextView
+            android:id="@+id/text_profile_slack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/rectangular_card_style"
+            android:drawableStart="@drawable/image_icon_slack"
+            android:drawablePadding="10dp"
+            android:elevation="10dp"
+            android:text="@string/text_profile_text_slack"
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/text_profile_track"
+            app:layout_constraintStart_toStartOf="@+id/text_profile_track"
+            app:layout_constraintTop_toBottomOf="@+id/text_profile_phone" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
